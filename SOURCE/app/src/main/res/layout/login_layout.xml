@@ -72,6 +72,8 @@
             />
 
         <TextView
+            android:padding="10dp"
+            android:drawableRight="@mipmap/ic_touch_id"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginHorizontal="30dp"
@@ -79,30 +81,33 @@
             android:gravity="center"
             android:text="ĐĂNG NHẬP"
             android:textColor="#fff"
-            android:textSize="12sp" />
+            android:textSize="15sp" />
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hình thức đăng nhập khác" />
+            android:layout_gravity="center"
+            android:text="-------------------Hình thức đăng nhập khác-------------------" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:orientation="horizontal">
 
             <ImageView
-                android:adjustViewBounds="true"
-                android:scaleType="centerInside"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
                 android:src="@mipmap/ic_fb" />
 
             <ImageView
-                android:adjustViewBounds="true"
-                android:scaleType="centerInside"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
                 android:src="@mipmap/ic_gg" />
         </LinearLayout>
     </LinearLayout>
