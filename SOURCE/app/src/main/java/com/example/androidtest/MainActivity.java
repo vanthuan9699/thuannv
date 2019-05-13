@@ -3,6 +3,7 @@ package com.example.androidtest;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -43,6 +44,9 @@ public class MainActivity extends AppCompatActivity {
         EditText edtPhoneNumber = findViewById(R.id.edt_phone_number);
         edtPhoneNumber.setText("Hello phonenumber");
         edtPhoneNumber.setTextSize(25);
+
+        TextView tvUsername = findViewById(R.id.tv_username);
+        tvUsername.setText(windsUser.getUsername());
 
     }
 }
