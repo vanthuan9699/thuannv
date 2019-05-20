@@ -80,6 +80,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="25dp">
+
             <TextView
 
                 android:layout_width="match_parent"
@@ -117,16 +118,16 @@
 
             <ImageView
                 android:id="@+id/img_fb_login"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:adjustViewBounds="true"
                 android:scaleType="centerInside"
                 android:src="@mipmap/ic_fb" />
 
             <ImageView
                 android:id="@+id/img_gg_login"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:adjustViewBounds="true"
                 android:scaleType="centerInside"
                 android:src="@mipmap/ic_gg" />

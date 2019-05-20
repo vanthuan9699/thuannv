@@ -25,6 +25,8 @@ public class LoginActivity extends AppCompatActivity {
         ImageView imgFB = findViewById(R.id.img_fb_login);
         ImageView imgGG = findViewById(R.id.img_gg_login);
 
+
+
         rlLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -34,7 +36,18 @@ public class LoginActivity extends AppCompatActivity {
                    // chuyen man hinh
                    //tao doi tuong intent
                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+
+                   User user;
+                   user = new User();
+                   user.setUsername("Nguyễn Văn Thuận");
+                   user.setPhoneNumber("0962805021");
+                   user.setProfileUrl("http://image.sggp.org.vn/w560/Uploaded/2019/kvovhun/2018_01_26/carolinewozniacki02_ckrr.jpg");
+                   user.setId(1);
+
+
+                   intent.putExtra("user", user);
                    startActivity(intent);
+                   finish();
                }else {
                    //thong bao loi
                    Toast.makeText(LoginActivity.this, "Vui long kiem tra so dien thoai va thu lai", Toast.LENGTH_SHORT).show();
