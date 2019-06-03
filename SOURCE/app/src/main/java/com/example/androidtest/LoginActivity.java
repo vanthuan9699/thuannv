@@ -1,6 +1,7 @@
 package com.example.androidtest;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -36,7 +37,6 @@ public class LoginActivity extends AppCompatActivity {
                    // chuyen man hinh
                    //tao doi tuong intent
                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-
                    User user;
                    user = new User();
                    user.setUsername("Nguyễn Văn Thuận");
@@ -46,7 +46,12 @@ public class LoginActivity extends AppCompatActivity {
 
 
                    intent.putExtra("user", user);
+
+                   // luu so dien thoại vào để lần sau vào thẳng màn hình user
+                   AppConfig.setPhoneNumber(edtPhoneNumber.getText().toString(), LoginActivity.this);
+
                    startActivity(intent);
+
                    finish();
                }else {
                    //thong bao loi
@@ -55,6 +60,12 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
+//    void savePhoneNumber(){
+//        SharedPreferences sharedPreferences = getSharedPreferences("Android005", MODE_PRIVATE);
+//        SharedPreferences.Editor editor = sharedPreferences.edit();
+//        editor.putString("phone_number", edtPhoneNumber.getText().toString());
+//        editor.apply();
+//    }
 
     boolean checkvalid() {
         int phoneLeng = edtPhoneNumber.getText().toString().length();
