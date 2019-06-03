@@ -1,17 +1,11 @@
-package com.example.androidtest;
+package com.example.androidtest.Controller.Main;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
+import com.example.androidtest.R;
 import com.squareup.picasso.Picasso;
-
-import java.io.Serializable;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 

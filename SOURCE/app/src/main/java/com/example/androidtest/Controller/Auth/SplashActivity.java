@@ -1,10 +1,11 @@
-package com.example.androidtest;
+package com.example.androidtest.Controller.Auth;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.androidtest.R;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -22,7 +23,7 @@ public class SplashActivity extends AppCompatActivity {
     }
 
     void screenRouter() {
-        Intent intent = new Intent(this, HomeActivity.class);
+        Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
 
 //        String phoneNumber = AppConfig.getPhoneNumber(this);

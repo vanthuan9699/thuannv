@@ -1,4 +1,4 @@
-package com.example.androidtest;
+package com.example.androidtest.Controller.Main;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
+
+import com.example.androidtest.R;
 
 public class InformationActivity extends AppCompatActivity {
 

@@ -1,7 +1,6 @@
-package com.example.androidtest;
+package com.example.androidtest.Controller.Main;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -9,6 +8,11 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
+
+//import com.example.androidtest.Controller.Main.MainActivity;
+//import com.example.androidtest.Controller.Main.User;
+import com.example.androidtest.R;
+import com.example.androidtest.Utils.AppConfig;
 
 public class LoginActivity extends AppCompatActivity {
     EditText edtPhoneNumber;

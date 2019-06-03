@@ -1,22 +1,21 @@
-package com.example.androidtest;
+package com.example.androidtest.Controller.Auth;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.RecyclerView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.androidtest.Model.HomeData;
+import com.example.androidtest.R;
 import com.google.gson.Gson;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.io.IOException;
 import java.io.InputStream;
 
 public class HomeActivity extends AppCompatActivity {
     HomeData homeData;
+    RecyclerView rvNew;
     TextView tvNew1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,28 +41,12 @@ public class HomeActivity extends AppCompatActivity {
 
         String ctthTitle2 = homeData.getResult().getListPromotion().get(1).getTitle();
         String imgnew2 = homeData.getResult().getListNews().get(1).getUrlImage();
-       tvNew1 = findViewById(R.id.new1);
+
+//       tvNew1 = findViewById(R.id.new1);
        tvNew1.setText(newsTitle1);
 
         Toast.makeText(this, customerName, Toast.LENGTH_SHORT).show();
-//        try {
-//            JSONObject jsonHomeData = new JSONObject(homeData);
-//            int status = jsonHomeData.getInt("status");
-//            int code = jsonHomeData.getInt("code");
-//            String msg = jsonHomeData.getString("message");
-//            JSONObject jsonResult = jsonHomeData.getJSONObject("result");
-//            JSONObject jsonCustomerDetail = jsonResult.getJSONObject("customerDetail");
-//            String customerName = jsonCustomerDetail.getString("customerName");
-//            JSONArray jsonArrayNews = jsonResult.getJSONArray("listNews");
-//
-//            JSONObject jsonNew1 = jsonArrayNews.getJSONObject(0);
-//            JSONObject jsonNew2 = jsonArrayNews.getJSONObject(1);
-//            JSONObject jsonNew3 = jsonArrayNews.getJSONObject(2);
-//
-//
-//        } catch (JSONException e) {
-//            e.printStackTrace();
-//        }
+
 
 
     }

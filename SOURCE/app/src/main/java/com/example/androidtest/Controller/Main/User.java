@@ -1,4 +1,4 @@
-package com.example.androidtest;
+package com.example.androidtest.Controller.Main;
 
 import java.io.Serializable;
 
