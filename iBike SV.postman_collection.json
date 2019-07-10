@@ -1,0 +1,266 @@
+{
+	"info": {
+		"_postman_id": "cce24407-e436-4458-945f-57acd66f7b95",
+		"name": "iBike SV",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Warning_Suggest",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"BikeID\":\"madara\",\r\n  \"Type\":\"1\",\r\n\"Page\":\"1\",\r\n\"KeySearch\":\"\"\r\n}"
+				},
+				"url": {
+					"raw": "http://winds.hopto.org:8789/api/Service/GetServiceOfBike",
+					"protocol": "http",
+					"host": [
+						"winds",
+						"hopto",
+						"org"
+					],
+					"port": "8789",
+					"path": [
+						"api",
+						"Service",
+						"GetServiceOfBike"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CurrentServices",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"BikeID\":\"35B205491\"\r\n}"
+				},
+				"url": {
+					"raw": "http://winds.hopto.org:8789/api/Service/GetServiceOfBikeMaking",
+					"protocol": "http",
+					"host": [
+						"winds",
+						"hopto",
+						"org"
+					],
+					"port": "8789",
+					"path": [
+						"api",
+						"Service",
+						"GetServiceOfBikeMaking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HistoryByMaterial",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"BikeID\":\"28B1-0009\",\r\n\"SearchKey\":\"\"\r\n}"
+				},
+				"url": {
+					"raw": "http://winds.hopto.org:8789/api/Service/GetListMaterialByBikeID",
+					"protocol": "http",
+					"host": [
+						"winds",
+						"hopto",
+						"org"
+					],
+					"port": "8789",
+					"path": [
+						"api",
+						"Service",
+						"GetListMaterialByBikeID"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HistoryByBill",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"BikeID\":\"35B205491\",\r\n\t\"SearchKey\":\"\"\r\n}"
+				},
+				"url": {
+					"raw": "http://winds.hopto.org:8789/api/Service/GetListBillByBikeID",
+					"protocol": "http",
+					"host": [
+						"winds",
+						"hopto",
+						"org"
+					],
+					"port": "8789",
+					"path": [
+						"api",
+						"Service",
+						"GetListBillByBikeID"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CurrentMaterial",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"BikeID\":\"28B1-0009\",\r\n  \"SearchKey\":\"\"\r\n}"
+				},
+				"url": {
+					"raw": "http://winds.hopto.org:8789/api/Service/GetListMaterialByBikeID",
+					"protocol": "http",
+					"host": [
+						"winds",
+						"hopto",
+						"org"
+					],
+					"port": "8789",
+					"path": [
+						"api",
+						"Service",
+						"GetListMaterialByBikeID"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AllMaterial",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"BikeID\":\"28B1-0009\",\r\n\t\"SearchKey\":\"\",\r\n\t\"Page\":\"1\"\r\n}"
+				},
+				"url": {
+					"raw": "http://winds.hopto.org:8789/api/Service/GetPriceListMaterial",
+					"protocol": "http",
+					"host": [
+						"winds",
+						"hopto",
+						"org"
+					],
+					"port": "8789",
+					"path": [
+						"api",
+						"Service",
+						"GetPriceListMaterial"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetPriceListMaterialFollow",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"BikeID\":\"28B1-0009\",\r\n\t\"SearchKey\":\"\",\r\n\t\"Page\":\"1\"\r\n}"
+				},
+				"url": {
+					"raw": "http://winds.hopto.org:8789/api/Service/GetPriceListMaterialFollow",
+					"protocol": "http",
+					"host": [
+						"winds",
+						"hopto",
+						"org"
+					],
+					"port": "8789",
+					"path": [
+						"api",
+						"Service",
+						"GetPriceListMaterialFollow"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r \"PhoneNumber\" : \"0387490078\",\r\"DeviceID\" : \"hjgjhg\",\r\"Os\" : \"android\"\r}"
+				},
+				"url": {
+					"raw": "http://45.118.144.19:1904/api/Service/Login",
+					"protocol": "http",
+					"host": [
+						"45",
+						"118",
+						"144",
+						"19"
+					],
+					"port": "1904",
+					"path": [
+						"api",
+						"Service",
+						"Login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
