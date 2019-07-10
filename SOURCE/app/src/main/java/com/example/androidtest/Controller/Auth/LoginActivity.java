@@ -1,4 +1,4 @@
-package com.example.androidtest.Controller.Main;
+package com.example.androidtest.Controller.Auth;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -11,6 +11,9 @@ import android.widget.Toast;
 
 //import com.example.androidtest.Controller.Main.MainActivity;
 //import com.example.androidtest.Controller.Main.User;
+import com.example.androidtest.Controller.Main.HomeActivity;
+import com.example.androidtest.Controller.Main.MainActivity;
+import com.example.androidtest.Controller.Main.User;
 import com.example.androidtest.R;
 import com.example.androidtest.Utils.AppConfig;
 
@@ -40,7 +43,7 @@ public class LoginActivity extends AppCompatActivity {
                if (checkvalid()){
                    // chuyen man hinh
                    //tao doi tuong intent
-                   Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                   Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
                    User user;
                    user = new User();
                    user.setUsername("Nguyễn Văn Thuận");

@@ -9,12 +9,14 @@
         android:src="@mipmap/img_logo"
         android:scaleType="center"/>
     <TextView
+        android:id="@+id/tv_title"
         android:textSize="30sp"
         android:textColor="#000"
         android:text="Title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <Button
+        android:id="@+id/btn_detail"
         android:text="Chi Tiet"
 
         android:layout_alignParentBottom="true"
